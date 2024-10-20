@@ -1,4 +1,4 @@
-# Form implementation generated from reading ui file '.\mainwindow.ui'
+# Form implementation generated from reading ui file 'ui\mainwindow.ui'
 #
 # Created by: PyQt6 UI code generator 6.7.1
 #
@@ -14,6 +14,7 @@ class Ui_MainWindow(object):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(524, 361)
         MainWindow.setCursor(QtGui.QCursor(QtCore.Qt.CursorShape.ArrowCursor))
+        MainWindow.setLocale(QtCore.QLocale(QtCore.QLocale.Language.English, QtCore.QLocale.Country.UnitedStates))
         self.centralwidget = QtWidgets.QWidget(parent=MainWindow)
         self.centralwidget.setMinimumSize(QtCore.QSize(524, 318))
         self.centralwidget.setMaximumSize(QtCore.QSize(568, 402))
@@ -27,10 +28,10 @@ class Ui_MainWindow(object):
         self.chooseBox.setGeometry(QtCore.QRect(20, 10, 121, 22))
         self.chooseBox.setObjectName("chooseBox")
         self.chooseBox.addItem("")
-        self.editProgram = QtWidgets.QPushButton(parent=self.centralwidget)
-        self.editProgram.setGeometry(QtCore.QRect(150, 10, 91, 24))
-        self.editProgram.setCursor(QtGui.QCursor(QtCore.Qt.CursorShape.PointingHandCursor))
-        self.editProgram.setObjectName("editProgram")
+        self.addProgram = QtWidgets.QPushButton(parent=self.centralwidget)
+        self.addProgram.setGeometry(QtCore.QRect(150, 10, 91, 24))
+        self.addProgram.setCursor(QtGui.QCursor(QtCore.Qt.CursorShape.PointingHandCursor))
+        self.addProgram.setObjectName("addProgram")
         self.addProject = QtWidgets.QPushButton(parent=self.centralwidget)
         self.addProject.setGeometry(QtCore.QRect(350, 80, 75, 24))
         self.addProject.setObjectName("addProject")
@@ -57,9 +58,9 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "Project Manager"))
         self.chooseBox.setItemText(0, _translate("MainWindow", "Choose Program"))
-        self.editProgram.setText(_translate("MainWindow", "Edit Programs"))
+        self.addProgram.setText(_translate("MainWindow", "Edit Programs"))
         self.addProject.setText(_translate("MainWindow", "Add Project"))
         self.deleteProject.setText(_translate("MainWindow", "Delete Project"))
         self.exportProject.setText(_translate("MainWindow", "Export Project"))
